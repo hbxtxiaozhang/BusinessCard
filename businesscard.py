@@ -1,5 +1,5 @@
 # 这是一个命令行下的名片管理系统
-
+#The simplest business card management system
 #主功能界面
 def all_fuc():
     print('   名片管理系统v1.0')
@@ -15,14 +15,12 @@ all_fuc()
 mp = []
 shuru = input('请输入序号执行：')
 
-
 # 增加名片
 def add_mp(name, age, telephone):
     newmans = {'name': name, 'age': age, 'tel': telephone}
     mp.append(newmans)
     all_fuc()
     return mp
-
 
 # 删除名片
 def del_mp(name):
@@ -97,10 +95,11 @@ while True:
         shuru = ''
     elif shuru == '1':
         name = input('请输入姓名：')
+        #这里后面还需要加一个输入控制，只让用户输入正整数
         age = int(input('请输入年龄：'))
         tel = input('请输入电话号码：')
         add_mp(name, age, tel)
         all_mp()
         shuru = ''
     else:
-        shuru = input('请输入序号执行：')
+        shuru = input('请输入正确的序号执行：')
