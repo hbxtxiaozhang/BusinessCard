@@ -9,9 +9,11 @@ def all_fuc():
     print('4：查询名片')
     print('5：显示所有名片')
     print('6：退出系统')
+    
 
-
-all_fuc()
+if __name__=='__main__':
+    all_fuc()
+    
 mp = []
 shuru = input('请输入序号执行：')
 
